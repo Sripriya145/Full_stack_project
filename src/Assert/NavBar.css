@@ -1,0 +1,49 @@
+.navbar-section {
+    width: 100%;
+    font-family: 'poppins';
+    
+  }  
+  .navbar-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    max-width: 75rem;
+    margin: 0 auto;
+  }
+  .logo >img {
+    width: 6rem;
+  }
+  .each-naviteam >ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+   .nav-item
+   {
+    margin: 0 15px;
+    text-decoration: none;
+   }
+   .nav-link
+   {
+    text-decoration: none;
+    color: black;
+    margin-left: 1rem;
+   }
+  
+  .nav-link:hover {
+   color: #6c9cac;
+   cursor: pointer;
+  
+  }
+  
+  .each-naviteam>li >a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .each-naviteam >li >a:hover {
+    color: #ddd;
+  }
+  

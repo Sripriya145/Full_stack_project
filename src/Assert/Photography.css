@@ -1,0 +1,85 @@
+.photography-section
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f9f9f9;
+  margin-top: 6rem;
+}
+.photography-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  cursor: pointer;
+}
+
+.photography-item {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin: 15px;
+  width: 330px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.photography-item:hover {
+  transform: scale(1.05);
+}
+.photography-title{
+  margin-bottom: 2rem;
+  color: #6c9cac;
+}
+.photography-pic {
+  width: 100%;
+  height: 200px;
+  max-height: fit-content;
+  object-fit: cover;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.photography-eachtitle {
+  padding: 1rem;
+}
+
+.photography-prices {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+  border-top: 1px solid #ddd;
+}
+
+.photography-repuess {
+  color: green
+  ;
+}
+
+.photography-addtocard {
+  background-color: #6c9cac;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.photography-addtocard:hover {
+  background-color: #e04d2d;
+}
+.old-price
+{
+  color: #acabab;
+  text-decoration: line-through;
+}
+
+
+
+
+
+ 

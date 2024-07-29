@@ -1,24 +1,35 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Login from './component/Login';
+import Register from './component/Register';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Footer from './component/Footer';
+import FAQ from './component/FAQ';
+import Navbar from './component/Navbar';
+
+import HomePage from './component/HomePage';
+import About from './component/About';
+import CancellationRefundPolicy from './component/CancellationRefundpolicy';
+import Venue from './component/Venue';
+import Themepage from './component/Themepage';
 
 function App() {
   return (
+    <BrowserRouter>
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <Navbar/>
+    <Routes>
+      <Route path='/login' element={<Login/>}/>
+      <Route path='/register' element={<Register/>}/>
+      <Route path='/faq' element={<FAQ/>}/>
+      <Route path='/venue' element={<Venue/>}/>
+      <Route path='/theme' element={<Themepage/>}/>
+      <Route path='/' element={<HomePage/>}/>
+      <Route path='/about' element={<About/>}/>
+      <Route path='/cancellation' element={<CancellationRefundPolicy/>}/>
+    </Routes>   
     </div>
+     </BrowserRouter>
   );
 }
 

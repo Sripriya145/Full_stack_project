@@ -1,0 +1,89 @@
+.about-section {
+  padding: 40px;
+  background-color: #f8f9fa;
+  color: #343a40;
+ 
+}
+
+.about-title {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #6596ca;
+}
+
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  /* max-width: 1200px; */
+  max-width: 75rem;
+  margin: 0 auto;
+  gap: 20px;
+}
+
+.aboutpic-section {
+  flex: 1;
+  text-align: center;
+}
+
+.aboutpic {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.about-right-content {
+  flex: 2;
+}
+
+.section-title {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #495057;
+}
+
+.about-company, .success-stories, .our-services, .problem-solving {
+  margin-bottom: 30px;
+}
+
+.about-company p, .success-stories p, .problem-solving p, .our-services ul {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.our-services ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.our-services li {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 8px;
+}
+
+@media (max-width: 768px) {
+  .about-title {
+    font-size: 24px;
+  }
+
+  .section-title {
+    font-size: 20px;
+  }
+
+  .about-content {
+    flex-direction: column;
+    
+  
+  }
+
+  .our-services
+  {
+    align-items: start;
+  }
+
+  .about-company p, .success-stories p, .problem-solving p, .our-services li {
+    font-size: 16px;
+  }
+}

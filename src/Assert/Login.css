@@ -1,0 +1,101 @@
+.login-container
+{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin: 5rem auto;
+    max-width: 55rem;
+    border-radius: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+}
+.login-section
+{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+}
+.login{
+ display: flex;
+ flex-direction: column;
+ gap: 2rem;
+ padding: 3rem;
+ align-items: center;
+ flex: 1;
+}
+.input-group
+{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 100%;
+    gap: 0.6rem;
+   
+}
+
+input{
+    padding: 0.9rem;
+    outline: none;
+    border: none;
+    border-radius: 0.1rem;
+    width:100%;
+    font-family: "poppins";
+    background-color: rgb(238, 238, 238);
+}
+.btn{
+     border: none;
+    width: 6rem;
+    height: 3rem;
+    color: white;
+    background-color: #003171;
+     border-radius: 0.5rem;
+     font-family: "poppins";
+     cursor: pointer;
+    
+} 
+
+.login-container>.navigator{
+    margin-top: 0%;
+    text-decoration: none;
+}
+.error{
+ color: red;
+   margin: 0%;
+   padding: 0%;
+   margin-left: 0%;
+}
+.loginImg
+{
+    object-fit: cover;
+    width: 100%;
+    height: max-content;
+}
+.loginImgsection {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  @media (max-width: 800px) {
+    .login-section
+    {
+        display: flex;
+        flex-direction:column;
+        justify-content: center;
+       
+    }
+    .login-container
+    {
+        max-width: 20rem;  
+    }
+   
+      .loginImg {
+        max-width: 80%;
+      }
+      .login {
+        max-width: 90%;
+       
+        margin-top: 20px;
+      }
+}
